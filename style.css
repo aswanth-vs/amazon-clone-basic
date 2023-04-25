@@ -1,0 +1,658 @@
+html,
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  /* min-width: 900px; */
+  line-height: 14px;
+  font-size: 14px;
+  background-color: rgb(227, 230, 230);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(65, 170, 219);
+}
+
+/* header {
+  height: 100px;
+} */
+
+.nav-belt {
+  background-color: rgb(19, 25, 33);
+}
+
+.nav-belt li {
+  display: inline-block;
+}
+
+.logo-main {
+  background: url("./images/amazon-logo-3.png");
+  background-repeat: no-repeat;
+  background-size: 102px;
+
+  height: 32px;
+  display: block;
+}
+
+span {
+  color: white;
+}
+
+#delivery {
+  color: white;
+  font-weight: bold;
+}
+
+#offcanvas_heading {
+  /* padding-right: 10%; */
+  font-size: 1.5rem;
+}
+
+/* .offcanvas_section ul {
+  display: block;
+}
+.offcanvas_list {
+  display: inline-block;
+  list-style-type: none;
+} */
+
+.offcanvas_section {
+  line-height: 2.7rem;
+}
+
+.main {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.offcanvas_section span {
+  color: black;
+  font-weight: normal;
+  padding-left: 35px;
+  width: 100%;
+}
+
+/* .offcanvas_section a:hover {
+  background: #485769;
+} */
+.nav {
+  background-color: rgb(19, 25, 33);
+}
+
+/*  */
+header {
+  background-color: rgb(19, 25, 33);
+  height: 90px;
+}
+
+.fixed-top {
+  background-color: rgb(19, 25, 33);
+}
+
+.nav-left {
+  position: relative;
+  float: left;
+  width: auto;
+  display: inline-block;
+}
+/* Delete if issues */
+.nav-left .nav-a {
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-left .nav-a:hover {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  /* box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5); */
+}
+/*  */
+.nav-right {
+  position: relative;
+  float: right;
+  width: auto;
+  display: inline-block;
+}
+
+.nav-fill {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#nav-logo {
+  padding: 11px 18px 0 24px;
+  position: relative;
+  width: 192px;
+}
+
+#nav-logo .nav-logo-link {
+  background: transparent url("./images/amazon-logo-3.png") no-repeat top left;
+  background-size: 102px;
+  height: 32px;
+  display: block;
+}
+
+#nav-logo .nav-logo-tagline {
+  color: #48a3c6;
+  position: absolute;
+  top: 31px;
+  left: 93px;
+  font-size: 11px;
+  line-height: 11px;
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+
+#nav-logo .nav-logo-tagline:hover {
+  color: #ffffff;
+}
+
+#nav-holiday {
+  top: 9px;
+  position: relative;
+  /* background-image: url("./img/fathers_day.jpg"); */
+  width: 400px;
+  height: 39px;
+}
+
+#nav-holiday a {
+  display: block;
+  height: 100%;
+}
+
+#nav-search {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 11px;
+  padding-right: 25px;
+}
+
+#nav-search input {
+  width: 100%;
+}
+
+#nav-search .nav-left {
+  height: 35px;
+  background-color: #f3f3f3;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+}
+
+#nav-search .nav-left:hover {
+  background-color: #dadada;
+  border-left-color: #dadada;
+  border-top-color: #dadada;
+  border-bottom-color: #dadada;
+}
+
+#nav-search .nav-search-label {
+  color: #777;
+  display: block;
+  font-size: 12px;
+  line-height: 33px;
+  margin-right: 21px;
+  margin-left: 10px;
+}
+
+#nav-search .nav-left i {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  color: #a0a0a0;
+  font-size: 11px;
+}
+
+#nav-search select {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  height: 35px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+#nav-search .nav-fill {
+  height: 35px;
+  overflow: hidden;
+}
+
+#nav-search .nav-fill input {
+  border: none;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #111;
+  outline: none;
+}
+
+#nav-search .nav-right {
+  background-color: #febd69;
+  width: 45px;
+  height: 35px;
+  border-radius: 0 4px 4px 0;
+}
+
+#nav-search .nav-right:hover {
+  background-color: #f3a847;
+}
+
+#nav-search .nav-right i {
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  color: #333;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+#nav-search .nav-right input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-indent: -1000px;
+}
+/*  */
+
+/*  */
+#nav-main ul {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+#nav-main li {
+  display: inline-block;
+  padding: 0 9px 0 0;
+}
+
+#nav-main a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#nav-main .nav-a {
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+}
+
+#nav-main .nav-a:hover {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  /* box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5); */
+}
+
+#nav-main .nav-a span {
+  display: block;
+  margin-left: -2px;
+  font-weight: 300;
+  color: #ccc;
+  font-size: 12px;
+}
+
+#nav-main i.fa-caret-down {
+  color: #ccc;
+  font-size: 11px;
+  padding-left: 3px;
+}
+
+/* #nav-main .nav-left {
+  height: 55px;
+} */
+
+/* Update width to 192 if any issues arise */
+#nav-main .nav-left .nav-shop {
+  float: left;
+  /* width: 192px; */
+  padding: 4px 12px 0 15px;
+}
+
+#nav-main .nav-left .nav-shop a {
+  margin-top: 0px;
+}
+
+#nav-main .nav-fill a {
+  font-weight: 500;
+  color: #ccc;
+}
+
+/* #nav-main .nav-fill a:hover {
+  text-decoration: underline;
+} */
+
+#nav-main .nav-right {
+  padding-right: 6px;
+}
+
+#nav-main .nav-right a {
+  margin-top: 6px;
+}
+
+#nav-main .nav-right .cart {
+  background: transparent url(./images/cart.png) no-repeat 11px 11px;
+  background-size: 39px;
+  padding: 7px 20px 7px 50px;
+}
+
+#nav-main .nav-right .cart span {
+  color: #f08804;
+  margin-left: -20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* custom */
+
+.under {
+  background-color: #232f3e;
+}
+
+/*  */
+#sp1 {
+  all: unset;
+}
+/*  */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1560px;
+  }
+}
+
+#promo .col-lg-12 {
+  padding: 0 22px 10px 22px;
+}
+
+#promo .carousel {
+  margin-top: -2px;
+}
+
+#products {
+  padding-inline: 40px;
+}
+
+.products_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 18px;
+}
+
+.product_card {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.product_footer {
+  position: absolute;
+  margin-top: 10px;
+  bottom: 10px;
+  left: 15px;
+}
+
+.product_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+#clothing {
+  row-gap: 40px;
+}
+
+.product_heading span {
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* .display_name span {
+  font-size: 11px;
+  color: black;
+} */
+
+.prod-info {
+  font-size: 12px;
+  color: black;
+}
+
+.product_display a {
+  text-decoration: none;
+  color: black;
+}
+
+.product_display a:hover {
+  text-decoration: none;
+}
+
+.product_footer a {
+  font-size: 13px;
+  /* color: rgb(38, 88, 255); */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+.below_signin {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.section-2 {
+  margin-top: 20px;
+  padding: 20px;
+  margin-inline: 40px;
+  background-color: white;
+}
+.section-2 .section-2-container h3 {
+  margin-bottom: 10px;
+}
+.section-2 .section-2-container .product-snaps {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.section-2 .section-2-container .product-snap {
+  display: inline-block;
+  width: 300px !important;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .section-2-container .product-snap img {
+  width: auto;
+  height: auto;
+  max-width: 270px;
+  max-height: 200px;
+}
+
+.section-2 .section-2-container span {
+  color: black;
+  font-size: 20px;
+}
+
+.section-2 .section-2-container a {
+  font-size: 13px;
+  /* color: blue; */
+  text-decoration: none;
+}
+
+.section-2 .section-2-container a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/*  */
+footer a {
+  color: #fff;
+}
+
+footer .top {
+  background: #37475a;
+}
+
+footer .top a {
+  padding: 17px;
+  width: 100%;
+  display: inline-block;
+}
+
+footer .top a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .top:hover {
+  background: #485769;
+}
+
+footer .center {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+footer ul {
+  margin: 30px 40px 30px 0;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+footer .middle {
+  background: #232f3e;
+}
+
+footer .middle h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 16px;
+}
+
+footer .middle li {
+  position: relative;
+}
+
+footer .middle .logo {
+  background: transparent url("../img/logo.png") no-repeat 0 0;
+  background-size: 76px;
+  width: 76px;
+  height: 23px;
+  display: block;
+  border: none !important;
+  margin-right: 60px;
+  position: absolute;
+  top: -14px;
+  left: -120px;
+}
+
+footer .middle a {
+  color: #ddd;
+  font-size: 13px;
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.footer .middle a:hover {
+  text-decoration: underline;
+}
+
+footer ul.copy {
+  display: inline-block;
+  width: 100%;
+}
+
+footer ul.copy li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #999;
+  font-size: 11px;
+}
+
+footer .middle .copy {
+  border-top: 1px solid #3a4553;
+  padding: 30px 20px 20px 20px;
+}
+
+footer .middle .copy a {
+  padding: 10px 30px 10px 10px;
+  color: #ccc;
+  border: 1px solid #848688;
+  border-radius: 3px;
+}
+
+footer .middle .copy a:hover {
+  text-decoration: underline;
+  border-color: #8d9096;
+}
+
+footer .middle .fa-globe {
+  margin-right: 5px;
+}
+
+footer .middle .flag-icon-us {
+  background-image: url("https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/us.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 1em;
+  width: 1.33333333em;
+  margin-right: 7px;
+  background-position: 0 2px;
+}
+
+footer .bottom {
+  background: #131a22;
+}
+
+footer .bottom ul {
+  margin-right: 0;
+}
+
+footer .bottom li {
+  margin-bottom: 15px;
+}
+
+footer .bottom a {
+  color: #ddd;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+footer .bottom a span {
+  color: #999;
+  font-size: 10px;
+}
